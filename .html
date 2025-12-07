@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ひまなみ、ローマンピアースへ — Friends</title>
+  <style>
+    :root{
+      --bg:#fbfbfb;
+      --card:#ffffff;
+      --muted:#8b8b8b;
+      --accent:#4a5568;
+      --glass: rgba(255,255,255,0.6);
+      --radius:18px;
+      font-family: Inter, system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#f1f3f5);color:var(--accent)}
+    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:48px}
+    .card{width:980px;max-width:94%;background:var(--card);border-radius:20px;padding:36px;box-shadow:0 10px 30px rgba(15,23,42,0.08);position:relative;overflow:hidden}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,#fff,#f7f8fa);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:var(--accent);box-shadow:inset 0 -6px 18px rgba(0,0,0,0.03)}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+    .main{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:18px}
+    .message{padding:22px;background:linear-gradient(180deg,var(--glass),rgba(255,255,255,0.9));border-radius:14px}
+    .message textarea{width:100%;height:260px;border:0;resize:vertical;padding:12px
+        ;font-size:16px;background:transparent;outline:none;color:var(--accent)}
+    .controls{display:flex;gap:10px;margin-top:12px}
+    button{background:#fff;border:1px solid #e6e9ec;padding:10px 14px;border-radius:10px;cursor:pointer}
+    button.primary{background:#2b3440;color:#fff;border:0}
+    aside{padding:18px;background:linear-gradient(180deg,#fafafa,#fff);border-radius:12px;border:1px solid #eef2f5}
+    .friends{display:flex;flex-direction:column;gap:12px}
+    .friend{display:flex;align-items:center;gap:10px}
+    .avatar{width:44px;height:44px;border-radius:10px;background:#f2f4f6;display:flex;align-items:center;justify-content:center;font-weight:700;color:#4b5563}
+    .friend strong{display:block}
+    .small{font-size:13px;color:var(--muted)}
+    footer{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
+    .confetti-canvas{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none}
+    @media (max-width:900px){.main{grid-template-columns:1fr}aside{order:2}}
+  </style>
+  <body>
+    <div class="wrap">
+        <div class="card" id="card">
+        <canvas class="confetti-canvas" id="confetti"></canvas>
+        <header>
+            <div class="logo">感</div>
+            <div>
+            <h1>ひまなみ、ローマンピアースへ</h1>
+            <p class="lead">いつも遊んでくれてありがとう。結婚おめでとう。</p>
+            </div>
+        </header>
+        <p>ひまなみ、ローマンピアースへ</p>
+        <p>いつも遊んでくれてありがとう。</p>
+        <p>結婚おめでとう。</p>
+        <p>これからも二人で力を合わせて、素敵な家庭を築いてください。</p>
+        <p>友達として、ずっと応援しています。</p>
+        <p>結婚式読んでね！</p>
+        <p>友達としていてほしいな！！</p>
+  </body>
+</html>
